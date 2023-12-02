@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-xrBfo8+bBZSjv1UzBBfbOMS5vn3RS+dV5TlaTuFjG+CfXJ99vNv4y/+LTGkqmgAt4bGyoItIyIU8kVRf+2I6p4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Website</h1>
+      <div class="quote-container">
+        <p class="quote">
+          Sunshine is delicious, rain is refreshing, wind braces up, snow is
+          exhilarating; there is no such thing as bad weather, only different
+          kinds of good weather.
+        </p>
+      </div>
+
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Enter city name" />
+        <!-- Add class="search-button" -->
+        <button class="search-button" onclick="getWeather()">Search</button>
+      </div>
+      <div class="weather-box">
+        <div class="icon"></div>
+        <div class="temp"></div>
+        <div class="weather"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Add this at the end of your body tag -->
+    <footer>
+      <p>Designed by: Sadiq Wahid</p>
+    </footer>
+  </body>
+</html>
