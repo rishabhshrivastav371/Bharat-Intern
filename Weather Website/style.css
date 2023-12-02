@@ -1,0 +1,96 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("pexels-irina-iriser-2534527.jpg"); /* Adjust the filename if needed */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  color: #eceaea;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.weather-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(95, 49, 49, 0.7);
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 24px;
+}
+
+.weather {
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+}
+.search-button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #3498db;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Add this line for transition effect */
+}
+
+/* Add a new rule for when the button is clicked */
+.search-button:active {
+  background-color: #022d49;
+  color: #fff;
+}
+.quote-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.quote {
+  font-size: 18px;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Add animation styles when the quote becomes visible */
+.quote.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
